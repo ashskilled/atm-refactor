@@ -2,19 +2,21 @@
 <html>
 
 <head>
+   <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
+   <h1>US ATM</h1>
     <div id="start"> 
-        <label>Input your pin:</label>
+        <label>INPUT YOUR PIN:</label>
         <input id="pinput"></input>
-        <button onclick="login()">Submit</button>
+        <button onclick="login()">SUBMIT</button>
         <p id="account"></p>
 
-        <label>New account:</label>
+        <label>NEW ACCOUNT:</label>
         <input id="newpinput"></input>
-        <button onclick="newAccount()">Submit</button>
+        <button onclick="newAccount()">SUBMIT</button>
     </div>
 
     <div id="menu" style="display:none"> 
@@ -24,6 +26,8 @@
         <button onclick="displayWithrawal()">Withdrawal</button>
 
         <button onclick="displayDeposit()">Deposit</button>
+
+        <button onclick="displayPinC()">Change Pin</button>
        
         <button onclick="returnToMenu()">Logout</button>
     </div>
